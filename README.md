@@ -4,6 +4,8 @@
 
 A [Flarum](http://flarum.org) extension. Add Last Posted User Avatar to DiscussionList
 
+![assa](https://user-images.githubusercontent.com/79002016/147469581-b3b2dc93-2142-4c29-aa0b-4474cc1ed808.png)
+
 ## Installation
 
 Install with composer:
