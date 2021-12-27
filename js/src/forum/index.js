@@ -7,7 +7,6 @@ import Link from 'flarum/common/components/Link';
 app.initializers.add('justoverclock/last-post-useravatar', () => {
   extend(DiscussionListItem.prototype, 'infoItems', function (items) {
     const discussion = this.attrs.discussion;
-    console.log(discussion)
     const lastPostedUser = discussion.lastPostedUser();
     const lastPostedUserName = discussion.lastPostedUser().displayName()
 
