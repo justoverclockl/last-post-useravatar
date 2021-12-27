@@ -12,12 +12,14 @@ app.initializers.add('justoverclock/last-post-useravatar', () => {
 
     items.add(
       'lastPostedUserAvatar',
+      <div className="lastAv">
       <Link
         className="DiscussionListItem-author"
         href={lastPostedUser ? app.route.user(lastPostedUser) : '#'}
         title={app.translator.trans('justoverclock-last-post-useravatar.forum.lastPostedUser') + lastPostedUserName}>
         {avatar(lastPostedUser, { title: '', className: 'lastPostedUserAvatar' })}
       </Link>
-    );
+      </div>
+      , 1);
   });
 });
