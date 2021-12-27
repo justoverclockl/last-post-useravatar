@@ -18,12 +18,10 @@ composer require justoverclock/last-post-useravatar:"*"
 
 ```sh
 composer update justoverclock/last-post-useravatar:"*"
-php flarum migrate
 php flarum cache:clear
 ```
 
 ## Links
 
 - [Packagist](https://packagist.org/packages/justoverclock/last-post-useravatar)
-- [GitHub](https://github.com/justoverclock/last-post-useravatar)
-- [Discuss](https://discuss.flarum.org/d/PUT_DISCUSS_SLUG_HERE)
+- [GitHub](https://github.com/justoverclockl/last-post-useravatar)
