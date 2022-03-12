@@ -8,8 +8,9 @@ app.initializers.add('justoverclock/last-post-useravatar', () => {
   extend(DiscussionListItem.prototype, 'infoItems', function (items) {
     const discussion = this.attrs.discussion;
     const lastPostedUser = discussion.lastPostedUser();
-    const lastPostedUserName = discussion.lastPostedUser().displayName()
+    const lastPostedUserName =  undefined ? discussion.lastPostedUser().displayName() : 'deleted user'
 
+    if (typeof lastPostedUser === undefined) return;
     items.add(
       'lastPostedUserAvatar',
       <div className="lastAv">
